@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class codingAssignment {
@@ -16,7 +17,7 @@ public class codingAssignment {
 		ages = Arrays.copyOf(ages, ages.length + 1);
 		ages[ages.length - 1] = 42;
 			System.out.println("New array with additional age added: " + Arrays.toString(ages));
-		
+			System.out.println("New Last element - first element: " + (ages[ages.length - 1] - ages[0]));
 	//c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 		int sum = 0;
 		for (int age : ages) {
@@ -82,7 +83,7 @@ public class codingAssignment {
 	
 //10.Write a method that takes an array of double and returns the average of all the elements in the array.
 	double[] tenTest = {12.03, 34.50, 60.00, 25.75};
-	System.out.println("The Average of thi array of double is:" + " " + calculateAverage(tenTest));
+	System.out.println("The Average of this array of double is:" + " " + calculateAverage(tenTest));
 	
 	
 //11.Write a method that takes two arrays of double and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
